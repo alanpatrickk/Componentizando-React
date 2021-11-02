@@ -1,5 +1,8 @@
 import { MovieCard } from '../components/MovieCard';
+import { Footer } from './Footer';
 import { Header } from './Header';
+
+import '../styles/content.scss';
 
 interface Movie {
   imdbID: string;
@@ -25,6 +28,7 @@ export function Content({movies, selectedGenre}: ContentProps) {
   return(
 
     <div className="container">
+
       <Header selectedGenre={selectedGenre} />
 
       <main>
@@ -34,6 +38,9 @@ export function Content({movies, selectedGenre}: ContentProps) {
           ))}
         </div>
       </main>
+
+      <Footer />
+
     </div>
 
   )

@@ -1,3 +1,5 @@
+import '../styles/header.scss';
+
 interface ContentProps {
   selectedGenre: {
     id: number;

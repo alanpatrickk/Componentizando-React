@@ -1,5 +1,7 @@
 import { Button } from '../components/Button';
 
+import '../styles/sidebar.scss';
+
 interface Genre {
   id: number;
   name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
@@ -18,6 +20,7 @@ export function SideBar({genres, selectedGenreId, handleClickButton}: SidebarPro
 
     <nav className="sidebar">
       <span>Watch<p>Me</p></span>
+      <small>by @alanpatrickk</small>
 
       <div className="buttons-container">
         {genres.map((genre:Genre) => (
